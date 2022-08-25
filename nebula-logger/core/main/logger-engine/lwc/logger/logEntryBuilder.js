@@ -111,19 +111,20 @@ const LogEntryBuilder = class {
             return;
         }
 
+        const consoleFormatting = 'background: #0c598d; color: #fff;';
         /* eslint-disable no-console */
         switch (this.loggingLevel) {
             case 'ERROR':
-                console.error(this.message, this);
+                console.error('%c Nebula Logger ', consoleFormatting, this.message, this);
                 break;
             case 'WARN':
-                console.warn(this.message, this);
+                console.warn('%c Nebula Logger ', consoleFormatting, this.message, this);
                 break;
             case 'INFO':
-                console.info(this.message, this);
+                console.info('%c Nebula Logger ', consoleFormatting, this.message, this);
                 break;
             default:
-                console.debug(this.message, this);
+                console.debug('%c Nebula Logger ', consoleFormatting, this.message, this);
                 break;
         }
     }

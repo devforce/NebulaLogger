@@ -6,13 +6,27 @@
 /* eslint-disable no-console */
 import { LightningElement } from 'lwc';
 import throwSomeError from '@salesforce/apex/LoggerLWCDemoController.throwSomeError';
-
+import { logger } from 'c/logger';
+// import Logger from 'c/logger';
+// import { info as logInfo } from 'c/logger';
 const LOGGER_NAME = 'c-logger';
 
 export default class LoggerLWCDemo extends LightningElement {
     message = 'Hello, world!';
     scenario = 'Some demo scenario';
     tagsString = 'Tag-one, Another tag here';
+
+    connectedCallback() {
+        console.log('hello??');
+        logger.info('hello!');
+        // const logger = this.template.querySelector(LOGGER_NAME);
+        // console.log('ze Logger', logger);
+        // // const logger = new Logger.CustomElementConstructor();
+        // // logger.debug('logging in ze connectedCallback() function!');
+        // logger.info('logging in ze connectedCallback() function!');
+        logger.saveLog();
+        // console.log('saved in the connectedCallback!');
+    }
 
     messageChange(event) {
         this.message = event.target.value;
@@ -96,8 +110,10 @@ export default class LoggerLWCDemo extends LightningElement {
     saveLogExample() {
         console.log('running saveLog for btn');
         const logger = this.template.querySelector(LOGGER_NAME);
+        console.log({ logger });
         logger.setScenario(this.scenario);
         console.log(logger);
         logger.saveLog('QUEUEABLE');
+        console.log('finished running saveLog for btn');
     }
 }
