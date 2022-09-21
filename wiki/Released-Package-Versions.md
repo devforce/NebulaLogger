@@ -12,6 +12,38 @@ All of the released 2GP package versions are listed below, including installatio
     <tbody>
         <tr>
             <td>
+                <a href="https://github.com/jongpie/NebulaLogger/releases/tag/v4.8.1" target="_blank">v4.8.1</a>
+            </td>
+            <td>New LoggerScenario__c Custom Object</td>
+            <td>
+                <a href="https://test.salesforce.com/packaging/installPackage.apexp?p0=04t5Y0000015luIQAQ" target="_blank">Sandbox</a>
+            </td>
+            <td>
+                <a href="https://login.salesforce.com/packaging/installPackage.apexp?p0=04t5Y0000015luIQAQ" target="_blank">Production</a>
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://github.com/jongpie/NebulaLogger/releases/tag/v4.8.0" target="_blank">v4.8.0</a>
+            </td>
+            <td>Summer '22 Release</td>
+            <td>
+                <a href="https://test.salesforce.com/packaging/installPackage.apexp?p0=04t5Y0000015lslQAA" target="_blank">Sandbox</a>
+            </td>
+            <td>
+                <a href="https://login.salesforce.com/packaging/installPackage.apexp?p0=04t5Y0000015lslQAA" target="_blank">Production</a>
+            </td>
+            <td>
+                <a href="https://test.salesforce.com/packaging/installPackage.apexp?p0=04t5Y0000015lsgQAA" target="_blank">Sandbox</a>
+            </td>
+            <td>
+                <a href="https://login.salesforce.com/packaging/installPackage.apexp?p0=04t5Y0000015lsgQAA" target="_blank">Production</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
                 <a href="https://github.com/jongpie/NebulaLogger/releases/tag/v4.7.8" target="_blank">v4.7.8</a>
             </td>
             <td>New "Log Batch Purge" Tab</td>
@@ -570,5 +602,3 @@ All of the released 2GP package versions are listed below, including installatio
         <tr>
     </tbody>
 </table>
-
-TODO table for release plugins? maybe that should be a separate page?
